@@ -1,7 +1,5 @@
 package leetCode.array;
 
-import java.util.Arrays;
-
 /**
  * 给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
  * <p>
@@ -101,6 +99,6 @@ public class MedianOfTwoSortedArrays {
     }
 
     public static void main(String[] args) {
-        System.out.println(new MedianOfTwoSortedArrays().findMedianSortedArrays(new int[]{1,2,3,4,6,7,8,9}, new int[]{5}));
+        System.out.println(new MedianOfTwoSortedArrays().findMedianSortedArrays(new int[]{1, 2, 3, 4, 6, 7, 8, 9}, new int[]{5}));
     }
 }
