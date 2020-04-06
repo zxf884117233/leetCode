@@ -33,6 +33,17 @@ public class ThreeSumClosest {
         }
         return threeSumClosest;
     }*/
+
+    /**
+     * 和最接近的target的三个数
+     * 首先数组排序，记录起始3个数的和，利用双指针，指向3个数的的后2个数，
+     * 求结果和target的差值的绝对值，差值越小，表示越接近，如果差值小于初始值与目标的差值，更改最小值，
+     * 否则和大于初始值，指针指向大的一方往小的一方移动，和小于初始值，指针指向小的一方往大的一方移动
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
         int result = nums[0] + nums[1] + nums[2];

@@ -1,7 +1,5 @@
 package leetCode.array;
 
-import java.util.Arrays;
-
 /**
  * 实现获取下一个排列的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。
  * <p>
@@ -16,6 +14,8 @@ import java.util.Arrays;
  * <p>
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/next-permutation
+ *
+ * 思路：从后往前找第一个比后面一个数小的数，若存在，从末尾找比当前数大的数，交换位置，将当前数后面的数逆转。
  */
 public class NextPermutation {
     public void nextPermutation(int[] nums) {

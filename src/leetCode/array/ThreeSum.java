@@ -1,7 +1,8 @@
 package leetCode.array;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 给你一个包含 n 个整数的数组 nums，
@@ -38,11 +39,7 @@ public class ThreeSum {
             int k = nums.length - 1;
             while (j < k) {
                 if (nums[j] + nums[k] == target) {
-                    List<Integer> list = new ArrayList<>();
-                    list.add(nums[i]);
-                    list.add(nums[j]);
-                    list.add(nums[k]);
-                    lists.add(list);
+                    lists.add(Arrays.asList(nums[i], nums[j], nums[k]));
                     j++;
                     k--;
                     while (j < k && nums[j] == nums[j - 1]) j++;
