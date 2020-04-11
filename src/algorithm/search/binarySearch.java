@@ -58,7 +58,12 @@ public class binarySearch {
         return left;
     }
 
-
+    /**
+     * 查找右边界
+     * @param nums
+     * @param target
+     * @return
+     */
     public int rightSearch(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;

@@ -13,6 +13,9 @@ public class InsertSort {
         System.out.println(Arrays.toString(arr));
     }
 
+    /**
+     * 稳定排序，时间复杂度O(n^2)  空间O(1)  原地修改
+     */
     public static void insertSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] < arr[i - 1]) {
